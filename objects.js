@@ -39,3 +39,36 @@ var car = {
 }
 
 console.log(car.fuel("Fuel is full "));
+
+console.log(car.tire);
+car.tire += 10;
+console.log(car.tire);
+
+//second way to handle object // function type object
+var vehicle = function(make, color, premium) {
+
+    var self = this;
+
+    this.make = make;
+    this.odometer = 0;
+    this.engine = "V6";
+    this.color = color;
+
+    if (premium == true) {
+        this.engine = "V8";
+        this.color = "platinum";
+
+    }
+
+    this.addTrip = function(newMiles)
+
+    {
+        if (newMiles > 0) {
+            self.odometer += newMiles;
+        }
+    }
+
+};
+
+var benz = new vehicle("mercidies Benz", "Blue", "False");
+console.log("color is :" + benz.color);
