@@ -20,3 +20,16 @@ if (avegrade === 90) {
     console.log('you need to try again');
 }
 
+
+var iamcool = true;
+if (iamcool) {
+    console.log("This had better print");
+}
+
+if (true == false) {
+    console.log("This is true");
+} else if (true != true) {
+    console.log("shouldn't see this");
+} else {
+    console.log("Why would we ever get there ?!")
+}
